@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DateTime zaman;
+            zaman = DateTime.Now;
+
+            Console.WriteLine("----- Tarih Saat Fonksiyonları -----");
+
+            Console.WriteLine("        Tarih: {0}",   zaman); // {0}    22.08.2019 02:57:38
+            Console.WriteLine("   Kısa Tarih: {0:d}", zaman); // {0:d}  22.08.2019 
+            Console.WriteLine("   Uzun Tarih: {0:D}", zaman); // {0:D}  22 Ağustos 2019 Perşembe 
+            Console.WriteLine("    Tam Tarih: {0:f}", zaman); // {0:f}  22 Ağustos 2019 Perşembe 02:58
+            Console.WriteLine("En Uzun Tarih: {0:F}", zaman); // {0:F}  22 Ağustos 2019 Perşembe 02:58:45
+            Console.WriteLine("Tarih ve Saat: {0:g}", zaman); // {0:g}  22.08.2019 03:01
+            Console.WriteLine("Tarih ve Saat: {0:G}", zaman); // {0:G}  22.08.2019 03:01:29
+            Console.WriteLine("       Ay-Gün: {0:m}", zaman); // {0:M}  22 Ağustos
+            Console.WriteLine("          GMT: {0:r}", zaman); // {0:R}  Thu, 22 Aug 2019 03:04:20 GMT
+            Console.WriteLine("        Biçim: {0:s}", zaman); // {0:s}  2019-08-22T03:07:01
+            Console.WriteLine("         Saat: {0:t}", zaman); // {0:t}  03.08
+            Console.WriteLine("Saliseli Saat: {0:T}", zaman); // {0:T}  03.08.05
+            Console.WriteLine("          Yıl: {0:y}", zaman); // {0:Y}  Ağustos 2019
+
+            Console.Read();
+        }
+    }
+}
